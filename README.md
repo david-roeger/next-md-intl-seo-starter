@@ -1,1 +1,1 @@
-# next-mdx-intl-seo
+# next-mdx-intl-seo-starter
