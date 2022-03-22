@@ -24,7 +24,7 @@
 ---
 
 - i18n uses the next/i18n package and is configured in `next.config.js`
-- Use the next/link package !!!
+- Use the next/link package for all routes!!!
 - the locale, defaultLocale, ... is available using the `useRouter()` hook
 - for nicer translation you could put all the translations in a lookup table
 
