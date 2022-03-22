@@ -4,12 +4,4 @@ module.exports = {
     locales: ["en", "de"],
     defaultLocale: "en",
   },
-
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.md$/,
-      use: "raw-loader",
-    });
-    return config;
-  },
 };
