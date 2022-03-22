@@ -1,21 +1,27 @@
-# Example app with MDX
+# Example app showcasing how to parse MD, do SEO stuff and use i18n
 
-This example shows using [MDX](https://github.com/mdx-js/mdx) as top level pages for your next.js app.
 
-## Deploy your own
+## develop
+```npm run dev```
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-mdx)
+## npm run build
+```npm run build```
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-mdx&project-name=with-mdx&repository-name=with-mdx)
+### Cause it´s using next i118 this cant be statically rendered
 
-## How to use
+---
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+- Markdown files are in the ./markdown directory
+- See `imprint/index.js` for an example on how to use Markdown in the project
 
-```bash
-npx create-next-app --example with-mdx with-mdx-app
-# or
-yarn create next-app --example with-mdx with-mdx-app
-```
+---
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+- SEO uses [next-seo](https://github.com/garmeeh/next-seo) (it´s really powerfull so checkout the documentation)
+- Defaultvalues are set in `_app.jsx` and can be overwritten in every file in the page directory
+
+---
+
+- i18n uses the next/i18n routing and is configured in `next.config.js`
+- the locale, defaultLocale, ... is available using the `useRouter()` hook
+- for nicer translation you could put all the translations in a lookup table
+
