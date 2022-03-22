@@ -7,7 +7,9 @@
 ## npm run build
 ```npm run build```
 
-### Cause it´s using next i118 this cant be statically rendered
+---
+
+*Cause it´s using next i118 this cant be statically rendered*
 
 ---
 
@@ -21,7 +23,8 @@
 
 ---
 
-- i18n uses the next/i18n routing and is configured in `next.config.js`
+- i18n uses the next/i18n package and is configured in `next.config.js`
+- Use the next/link package !!!
 - the locale, defaultLocale, ... is available using the `useRouter()` hook
 - for nicer translation you could put all the translations in a lookup table
 
